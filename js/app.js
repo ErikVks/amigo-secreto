@@ -22,12 +22,14 @@ function sortear(){
         }
         sorteio.push(amigoSorteado);
     }
-    console.log(amigos);
-    console.log(sorteio);
+    for (let i = 0; i < sorteio.length; i++){
+        document.getElementById('lista-sorteio').innerHTML += amigos[i] + ' --> ' + sorteio[i] + '<br>';
+    }
 }
 
 function reiniciar(){
     amigos = [];
     sorteio = [];
     document.getElementById('lista-amigos').textContent = '';
+    document.getElementById('lista-sorteio').innerHTML = '';
 }
