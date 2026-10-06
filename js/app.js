@@ -1,5 +1,5 @@
 let amigos;
-let sorteio;
+let sorteio
 reiniciar();
 
 function adicionar(){
@@ -13,6 +13,7 @@ function adicionar(){
 function sortear(){
     if (amigos.length < 3) return alert('Adicione mais amigos.');
     sorteio = [];
+    document.getElementById('lista-sorteio').innerHTML = '';
     for (let i = 0; i < amigos.length; i++){
         if (i + 1 == amigos.length && !(sorteio.includes(amigos[i]))) {
             return sortear();
