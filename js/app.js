@@ -5,6 +5,7 @@ reiniciar();
 function adicionar(){
     let amigo = document.getElementById('nome-amigo').value
     if (amigo == '') return;
+    if (amigos.includes(amigo)) return alert('Esse nome já foi adicionado');
     document.getElementById('nome-amigo').value = '';
     amigos.push(amigo);
     document.getElementById('lista-amigos').textContent = amigos.join(' - ');
