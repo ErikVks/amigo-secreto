@@ -8,6 +8,8 @@ O `index.html`, o `style.css` e as imagens foram disponibilizados prontos pela A
 
 **GitHub Pages:** [erikvks.github.io/amigo-secreto](https://erikvks.github.io/amigo-secreto/)
 
+**Vercel:** [amigo-secreto-tau-sable.vercel.app](https://amigo-secreto-tau-sable.vercel.app)
+
 ## Como funciona
 
 O usuário digita o nome de um participante e clica em "Adicionar". O nome entra na lista de amigos incluídos, que aparece na tela separada por hífens, e o campo é limpo para o próximo cadastro. Quando todos estiverem cadastrados, o botão "Sortear" monta os pares e exibe o resultado no formato de quem tira quem. O sorteio exige pelo menos três participantes, e com menos que isso a aplicação avisa que faltam amigos em vez de sortear. O link "Reiniciar" apaga tudo e devolve a tela ao estado inicial.
